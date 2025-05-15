@@ -1,7 +1,6 @@
 *{
     padding:0;
     margin:0;
-
 }
 .nav{
     margin-bottom:50px;
@@ -64,6 +63,7 @@ display:flex;
 }
 .hero-section img{
     width:100%;
+    opacity:100%;
   
 }
 .highlight{
@@ -89,6 +89,7 @@ display:flex;
     margin-top:520px;
     margin-bottom:-190px;
     text-align:center;
+    font-size:35px;
 }
 .about-section{
 margin-top:220px;
@@ -135,6 +136,11 @@ gap:10px;
     margin-top:90px;
     margin-left:200px;
 }
+.about2-section h3{
+  font-size:30px;
+  margin-bottom:20px;
+
+}
 .image2-container{
     margin-left:700px;
     margin-top:-340px;
@@ -175,6 +181,17 @@ gap:10px;
 .card2{
     width:18%;
     margin-top:300px;
+ 
+}
+.card2 h2{
+  font-size:40px;
+}
+.card2 button{
+  background-color:red;
+  border-radius:10px;
+  width:180px;
+  height:40px;
+  color:white;
 }
 .card3{
     margin-left:1000px;
@@ -185,6 +202,22 @@ gap:10px;
     height:300px;
  
 
+}
+.button4{
+  color:red;
+  border:solid red 1px;
+  border-radius:15px;
+  width:140px;
+  height:40px;
+
+}
+.button5{
+  color:white;
+  border:solid red 2px;
+  border-radius:15px;
+  width:140px;
+  height:40px;
+background-color: red;
 }
 .twincard img{
     width:41%;
@@ -280,3 +313,197 @@ display:flex;
   .partners{
      
   }
+  .footer-section{
+    background-color:black;
+    display:flex;
+
+  }
+  .footer-section h2{
+    color:white;
+  }
+  .footer-section p{
+    color:white;
+  }
+  .footerimage img{
+    width:40%;
+    margin-left:400px;
+    margin-top:50px;
+  }
+  .courses{
+    margin-left:100px;
+  }
+  .courses ul li a{
+    color:white;
+  }
+  .helpfullinks ul li a{
+    color:white;
+  }
+  .helpfullinks{
+    margin-left:150px;
+    }
+  .contactinformation{
+    margin-left:150px;
+   
+  }
+  .contactinformation p img{
+    width:5%;
+  }
+  .copyright{
+  margin-top:600px;
+  margin-left:-1200px;
+  }
+  .p{
+    margin-top:220px;
+  }
+  body {
+    overflow: auto;
+
+  }
+
+/* Tablets (portrait and smaller) */
+@media (max-width: 992px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-section p, .hero-section ul {
+    text-align: center;
+  }
+
+  .about2-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about2-section .image2-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .about3-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .twincard {
+    flex-direction: column;
+  }
+
+  .twincard img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Phones (up to 768px) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links, .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about4-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .testimonials-container {
+    padding: 10px;
+  }
+
+  .testimonials {
+    margin: 10px 0;
+  }
+
+  .ourpartners img {
+    max-width: 100px;
+    margin: 5px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-section > div {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  h2, h3, h4, h5 {
+    font-size: 1rem;
+  }
+
+  .button1, .button2, .button3, .button4, .button5 {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .overlay-text {
+    font-size: 0.9rem;
+  }
+
+  .p {
+    font-size: 0.9rem;
+  }
+
+  .testimonials img {
+    width: 100%;
+  }
+}
